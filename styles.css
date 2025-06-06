@@ -44,6 +44,9 @@ html, body {
     font-size: 24px;
     box-sizing: border-box;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 button {
     width: 60px;
