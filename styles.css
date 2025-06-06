@@ -6,6 +6,7 @@ html, body {
     font-family:'Rubik', sans-serif;
     flex: 1;
     justify-content: space-between;
+    background-color: #f4f4f9;
 
 }
 
@@ -26,18 +27,19 @@ html, body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(68, 68, 68);
+    background-color: #2d2d2d;
     width: 300px;
     height: auto;
     border: black 2px solid;
     flex-shrink: 1;
     border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
                                              
 .display {
     width: 200px;
     height: 80px;
-    background-color: #afce7d;                                                                          
+    background-color: #e0f7da;                                                                          
     border: 1px solid black;
     text-align: right;
     margin: 16px;
@@ -47,7 +49,9 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
+
 button {
     width: 60px;
     height: 60px;
@@ -59,23 +63,31 @@ button {
     border-radius: 50%;
     border: 5px;
     font-family:'Rubik', sans-serif;
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.15);
 }
 
 .buttons {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
+    
 }
 
 .operations {   
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.15);
 
 }
 
 #backspace, #clear {
     background-color: lightgreen;
+}
+
+#backspace:hover, #clear:hover {
+    background-color: #b2dfdb;
+    cursor: pointer;
 }
 
 .top {
@@ -94,8 +106,25 @@ button {
 
 #equals, .operator {
     background-color: darkslategray
+
+}
+
+#equals:hover, .operator:hover {
+    background-color: #b2dfdb;
+    cursor: pointer;
 }
 
 .footer {
-    margin-left: 20px;
+    
+    text-align: center;
+}
+
+button:hover {
+    background-color: #b2dfdb;
+    cursor: pointer;
+}
+
+.header h1,
+.footer h1 {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
