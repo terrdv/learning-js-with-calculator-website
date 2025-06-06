@@ -3,39 +3,96 @@ html, body {
     margin: 0;
     display: flex;
     flex-direction: column;
+    font-family:'Rubik', sans-serif;
+    flex: 1;
+    justify-content: space-between;
 
 }
 
 .header {
     align-self: top;
-    margin-bottom: 300px;
     background-color: lightgray;
     color: white;
     text-align: center;
-    font-family:'Rubik', sans-serif;
+    
 
 }
 
 
 .calculator {
-    align-self: center;                                                                                     
+
+    align-self: center;                                                                       
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: rgb(68, 68, 68);
-    width: 600px;
+    width: 300px;
+    height: auto;
+    border: black 2px solid;
+    flex-shrink: 1;
+    border-radius: 10px;
 }
                                              
 .display {
-    flex-shrink: 0;
-    font-family: 'Rubik', sans-serif;
     width: 200px;
-    height: 100px;
-    background-color: #f0f0f0;                                                                          
-    border: 1px solid #ccc;
+    height: 80px;
+    background-color: #afce7d;                                                                          
+    border: 1px solid black;
     text-align: right;
     margin: 16px;
     font-size: 24px;
     box-sizing: border-box;
+    border-radius: 10px;
+}
+button {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    font-size: 24px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 5px;
+    font-family:'Rubik', sans-serif;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.operations {   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#backspace, #clear {
+    background-color: lightgreen;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    gap: 13px;
+    
+}
+
+#me {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+
+#equals, .operator {
+    background-color: darkslategray
+}
+
+.footer {
+    margin-left: 20px;
 }
